@@ -15,12 +15,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e8d363e8c6559ae7b0a88f27c54de898
-BuildRequires:	perl-Math-BigInt >= 1.72
-BuildRequires:	perl(Math::BigFloat) >= 1.36
+BuildRequires:	perl-Math-BigInt >= 1.74
+BuildRequires:	perl(Math::BigFloat) >= 1.48
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.72
-Requires:	perl(Math::BigFloat) >= 1.36
+Requires:	perl-Math-BigInt >= 1.74
+Requires:	perl(Math::BigFloat) >= 1.48
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -57,8 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BENCHMARK BUGS CHANGES CREDITS LICENSE NEW README TODO
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
-%{perl_vendorlib}/%{pdir}/%{pnam}
+%{perl_vendorlib}/Math/Big.pm
+%{perl_vendorlib}/Math/Big
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/*.txt
