@@ -10,6 +10,7 @@ Summary(pl):	Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFl
 Name:		perl-Math-Big
 Version:	1.09
 Release:	1
+# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
