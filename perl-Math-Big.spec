@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	Big
+%define		pdir	Math
+%define		pnam	Big
 Summary:	Math::Big - useful routines and packages with Math::BigInt/BigFloat
 Summary(pl):	Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFloat
 Name:		perl-Math-Big
