@@ -8,18 +8,18 @@
 Summary:	Math::Big - useful routines and packages with Math::BigInt/BigFloat
 Summary(pl):	Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFloat
 Name:		perl-Math-Big
-Version:	1.09
+Version:	1.10
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	44f46494949198def1e391f604a6d341
-BuildRequires:	perl-Math-BigInt >= 1.61
+# Source0-md5:	9122d57f2ae8007a01a33fecc25b21b3
+BuildRequires:	perl-Math-BigInt >= 1.72
 BuildRequires:	perl(Math::BigFloat) >= 1.36
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.61
+Requires:	perl-Math-BigInt >= 1.72
 Requires:	perl(Math::BigFloat) >= 1.36
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
