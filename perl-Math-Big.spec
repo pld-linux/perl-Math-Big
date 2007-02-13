@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	Big
 Summary:	Math::Big - useful routines and packages with Math::BigInt/BigFloat
-Summary(pl.UTF-8):   Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFloat
+Summary(pl.UTF-8):	Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFloat
 Name:		perl-Math-Big
 Version:	1.11
 Release:	1
