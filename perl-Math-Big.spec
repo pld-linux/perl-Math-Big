@@ -7,19 +7,19 @@
 Summary:	Math::Big - useful routines and packages with Math::BigInt/BigFloat
 Summary(pl.UTF-8):	Math::Big - przydatne funkcje i pakiety oparte o Math::BigInt/BigFloat
 Name:		perl-Math-Big
-Version:	1.12
-Release:	3
+Version:	1.16
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5782c961f405e04c2bf1bcde309c24d2
+Source0:	https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	1b3c067ba8e2cc643e1a41f7c8d454b4
 URL:		http://search.cpan.org/dist/Math-Big/
-BuildRequires:	perl-Math-BigInt >= 1.74
+BuildRequires:	perl-Math-BigInt >= 1.999814
 BuildRequires:	perl(Math::BigFloat) >= 1.48
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.74
+Requires:	perl-Math-BigInt >= 1.999814
 Requires:	perl(Math::BigFloat) >= 1.48
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc BENCHMARK BUGS CHANGES CREDITS LICENSE NEW README TODO
+%doc BUGS CHANGES CREDITS LICENSE NEW README TODO
 %{perl_vendorlib}/Math/Big.pm
 %{perl_vendorlib}/Math/Big
 %{_mandir}/man3/*
